@@ -1,0 +1,20 @@
+{
+  "name": "the-lost-islands",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --configLoader runner",
+    "build": "tsc --noEmit && vite build --configLoader runner",
+    "test": "node --experimental-strip-types --test tests/*.test.ts"
+  },
+  "devDependencies": {
+    "@types/three": "^0.180.0",
+    "typescript": "^5.9.3",
+    "vite": "^6.1.0"
+  },
+  "dependencies": {
+    "dompurify": "^3.4.17",
+    "three": "^0.180.0"
+  }
+}
